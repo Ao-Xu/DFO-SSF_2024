@@ -1,4 +1,4 @@
-## Reproduction of the DFO-S Algorithm (Download Dataset -> Load and Train -> Confirm Classes -> Optimization -> Incorporate Bayesian Optimization)
+## Reproduction of the DFO-S Algorithm
 
 **This code is based on my paper:**
 
@@ -10,7 +10,7 @@ This repository provides the implementation to reproduce the DFO-S (Deep Learnin
 
 1. Download and load the MNIST dataset.
 2. Define a simple image classifier.
-3. Define the scoring network $s_{\theta}(\cdot)$.
+3. Define the scoring network \$s\_{\theta}(\cdot)\$.
 4. Train a classifier model.
 5. Train a scoring network for each class.
 6. Compute the synthesized score field.
@@ -67,4 +67,25 @@ When running on a Linux server (which typically lacks a GUI), visualizations usi
 
 ```bash
 python3 dfo_s_mnist_picture.py
+```
+
+## Code Availability
+
+We are fully committed to reproducibility. This code is publicly available on GitHub and can be used to reproduce the results in the paper. You can access the repository and the required experimental setup directly from here.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+```
+@article{dfo-s2025,
+  title={Generating Image Counterfactuals in Deep Learning Models Without the Aid of Generative Models},
+  author={Xu, A. and Li, Z. and Zhang, Y. and et al.},
+  journal={IEEE Signal Processing Letters},
+  year={2025}
+}
 ```
